@@ -14,7 +14,7 @@ def count_chars(text:str) -> Dict:
     for word in text:
         for c in word.lower():
             vocabulary[c] = vocabulary.get(c,0)+1
-    return vocabulary #sorted(((v,k) for k,v in vocabulary.items()), reverse= True)
+    return vocabulary
 
 def sort_on(stats:Dict) -> List:
     sort_out = sorted(((v,k) for k,v in stats.items()), reverse = True)
